@@ -1,0 +1,21 @@
+1、宽度 750px 设计时，网页建设设计宽度
+2、在标题 32-36px
+3、中标题 26-28px
+4、小标题 25px
+5、正文 25px
+
+html{font-size: 62.5%;}
+
+@media (max-width: 560px){html{font-size: 50%;}}
+@media (max-width: 460px){html{font-size: 40%;}}
+@media (max-width: 360px){html{font-size: 35%;}}
+
+//因为Chrome不支持[font-size:10px;]
+所以在开发的时候，根元素可以先乘以100，子元素除以100来换算
+eg:
+
+//[最终显示结果 Chrome和Firefox都一致，因为是手机端，故不考虑低版本IE]
+html{font-size: 625%;}
+
+div{width: 1rem; height: 1rem; font-size: 0.14rem;}
+
